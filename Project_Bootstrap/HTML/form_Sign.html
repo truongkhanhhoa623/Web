@@ -1,0 +1,30 @@
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <form action="#" class="sign" name="formLogin">
+                    <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+                    <div class="form-group">
+                        <label for="name">Username:</label>
+                        <input type="text" class="form-control" name="name" placeholder="Enter username"
+                        required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"
+                            required>
+                    </div>
+                    <a class="dangki" href="#!dangky">Đăng Ký</a><br><br>
+                    <input ng-disabled="formLogin.$invalid" type="submit" name="submit" id="submit" value="Đăng Nhập"
+                    class="btn btn-outline-secondary" />
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-6 col-0">
+                <div class="img-sign">
+                    <img src={{img}} width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+   

@@ -1,0 +1,61 @@
+<div class="valid" onload="document.formValid.userid.focus()">
+    <h1>ĐĂNG KÝ TÀI KHOẢN</h1>{{valid.name}}
+    <hr class="w-50">
+    <br>
+    <!--FORM REGISTRATION-->
+    <form id="form-valid" name="formValid">
+        <!--UserID-->
+        <div class="form-group">
+            <label>Tên Tài Khoản:</label>
+            <input class="form-control" type="text" name="userid" ng-model="user" ng-minlength="6" ng-maxlength="12"
+                ng-required=true>
+            <span class="error" ng-show="formValid.userid.$error.required">Thông tin bắt buộc</span>
+            <span class="error" ng-show="formValid.userid.$error.minlength">Tên tài khoản phải từ 6 ký tự</span>
+            <span class="error" ng-show="formValid.userid.$error.maxlength">Tên tài khoản không dài quá 12 ký tự</span>
+        </div>
+        <!--PASS-->
+        <div class="form-group">
+            <label>Mật Khẩu</label>
+            <input class="form-control" type="password" name="password" ng-show="!showPassword" ng-model="password"
+                ng-minlength="6" ng-maxlength="12" ng-required=true>
+            <input class="form-control" type="text" name="plainPassword" ng-show="showPassword" ng-model="password"
+                ng-minlength="6" ng-maxlength="12" ng-required=true>
+                <span class="error" ng-show="formValid.userid.$error.required">Thông tin bắt buộc</span>
+                <span class="error" ng-show="formValid.userid.$error.minlength">Mật khẩu phải từ 6 ký tự</span>
+                <span class="error" ng-show="formValid.userid.$error.maxlength">Tên khẩu không dài quá 12 ký tự</span>
+        </div>
+        <div>
+            <input type="checkbox" id="showPassword" ng-model="showPassword">
+            <label class="comment" for="showPassword"> Hiện mật khẩu</label>
+        </div>
+
+        <!--EMAIL-->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="form-control" name="email" type="text" ng-model="email" even-email required>
+            <span class="error" ng-show="!formValid.email.$valid">Nhập Email theo định dạng "x@x.xx"</span>
+        </div>
+        <!--SDT-->
+        <div class="form-group">
+            <label for="soluong">Số Điện thoại:</label>
+            <input class="form-control" name="soluong" type="number" ng-model="soluong" even-number required>
+            <span class="error" ng-show="!formValid.soluong.$valid">Nhập SDT 10 chử số:</span>
+        </div>
+
+        <!--ABOUT-->
+        <label>Chọn danh mục bạn quan tâm:</label><br>
+
+        <div ng-repeat='user in users'>
+            <input type='checkbox' value='{{ user.name }}' ng-model='user.selected'> {{ user.name}}
+        </div>
+        {{checkVal()}}
+        <span class="error" ng-show="!check">Chọn danh mục quan tâm( không bắt buộc)</span><br>
+        Bạn đã chọn: <span>{{ result }}</span>
+        <!--SUBMIT-->
+        <br><br><a href="#!dangnhap">Đã có tài khoản!</a>
+        <div class="text-center">
+            <input ng-disabled="formValid.$invalid" type="submit" name="submit" id="submit" value="Đăng Kí"
+                class="btn btn-outline-secondary" />
+        </div>
+    </form>
+</div>

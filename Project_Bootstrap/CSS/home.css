@@ -1,0 +1,351 @@
+@font-face {
+    src: url("/Font/Lemonada/Lemonada-VariableFont_wght.ttf");
+    font-family: Hemonada;
+}
+.err{
+    color: red;
+}
+input{
+    display: inline-block;
+}
+.conatiner-fluid{
+    background-color: whitesmoke;
+}
+html, body {
+    margin: 0px;
+    font-size: 13px;
+    background-color: whitesmoke;
+}
+/*-----------------TOP----------------*/
+.nav-form form {
+    position: relative;
+  }
+  
+  .nav-form form input {
+    border: none;
+    background: #fff;
+    padding: 7px;
+    outline: none;
+    border-radius: 12px;
+  }
+  
+  .nav-form form button {
+    padding: 5px;
+    border-radius: 12px;
+    position: absolute;
+    right: 13px;
+    top: -5px;
+    border: none;
+    outline: none;
+    background: #fff;
+  }
+  
+.form, .user {
+    display: inline;
+}
+
+#dropdownMenuButton{
+    outline-style: none;
+}
+#cart{
+    font-size: 21px;
+    border: none;
+    background-color: rgb(201, 201, 201);
+}
+
+.navbar {
+    background-color: rgb(201, 201, 201);
+}
+
+.navbar ul {
+    margin: 0px auto;
+}
+
+.navbar ul li a {
+    margin-left: 10px;
+    color: rgb(46, 45, 45);
+}
+
+.navbar ul li a:hover {
+    color: rgba(41, 40, 40, 0.6);
+}
+
+.search {
+    border: 1px solid rgb(228, 228, 228);
+    background-color: rgb(228, 228, 228);
+}
+/*SANPHAM*/
+.accordion{
+    height: auto;
+    background-color: whitesmoke;
+}
+/*-----Cart------------*/
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+
+    padding-top: 10px;
+
+  }
+  
+  .modal-content {
+    margin: 0 auto;
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+  
+  }
+  
+  .modal-body {
+    padding: 1rem;
+  }
+  /*SIGN*/
+  .sign{
+      margin: 5% 10%;
+      width: 60%;
+  }
+ 
+  .form-group{
+      align-items: flex-start;
+  }
+  .dangki{
+     display: inline;
+      color: rgb(243, 118, 118);
+  }
+/* Registration Form*/
+.valid{
+    width:50%;
+    margin: 30px auto;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 10px rgb(180, 178, 178);
+}
+h1{
+    text-align: center;
+    color: rgb(116, 111, 111);
+    text-shadow: 1px 1px 10px 1px black;
+}
+.error{
+    font-size: 12px;
+    color: red;
+    position: relative;
+    left: 10px;
+}
+.sub{
+    width: 150px;;
+}
+/*BOAHANH*/
+.baohanh{
+    font-size: 1.2rem;
+}
+/*---------------LIST_SANPAM-------------*/
+.badge{
+    float: right;
+}
+.margin{
+    margin-bottom: 10px;
+}
+.icon-new{
+    text-align: center;
+    color: rgb(88, 233, 59);
+    top:4px;
+    position: absolute;
+    border: 1px solid;
+    width: 20%;
+}
+.icon-hotline h5{
+    display: inline;
+}
+.icon-hot{
+    text-align: center;
+    color: rgb(247, 111, 57);
+    top:4px;
+    position: absolute;
+    border: 1px solid;
+    width: 20%;
+}
+.icon-logo{
+    position: absolute;
+}
+.title-sp{
+    margin-top: 20px;
+}
+.content-product-h3{
+    text-align: center;
+}
+.money{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(248, 132, 112);
+}
+.chonmau{
+    display: inline-block;
+    margin-right: 10px;
+}
+.box-color1, .box-color2{
+    display: inline;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.box-color1{
+    background-color: black;
+    color: white;
+}
+.box-color2{
+    background-color: rgb(202, 200, 200);
+    color: black;
+}
+.bt-mua{
+    width: 100px;
+    height: 60px;
+}
+.card-card{
+    position: relative;
+}
+.card-card:hover .main-product-hover{
+    opacity: 1;
+}
+.main-product{
+    height: 100%;
+    z-index: 1;
+    border-style: none;
+}
+.main-product-hover{
+    height: 100%;
+    border: none;
+    transition: 0.5s;
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.btn-cart{
+    width: 80px;
+    font-size: 21px;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+}
+.btn-search{
+    width: 80px;
+    font-size: 21px;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+}
+/*PANNER*/
+.fa-shipping-fast, .fa-box{
+    font-size: 40px;
+    margin:10px;
+}
+.panner{
+    color: white;
+    margin-bottom: 30px;
+    background-color: rgb(56, 56, 56);
+    text-align: center;
+    padding: 50px;
+}
+
+/* FOOTER*/
+.footer hr{
+   height: 1px;
+   background-color: white;
+}
+.footer a{
+    color: white;
+}
+.footer{
+    color: white;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+.fab{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 100px;
+    font-size: 2rem;
+    margin-left: 10px;
+    align-items: center;
+    padding-top: 7px;
+}
+.fa-facebook-f{
+    color: rgb(55, 0, 255);
+}
+.fa-twitter{
+    color: rgb(27, 161, 223);
+}
+.fa-youtube{
+    color: red;
+}
+.fa-instagram{
+    color: rgb(201, 89, 176);
+}
+
+
+@media (min-width: 360px) and (max-width: 767.98px) {
+    .navbar-toggler{
+        margin-top: 10px;
+    }
+    .navbar{
+        height: auto;
+    }
+    .user{
+        position: absolute;
+        top:10px;
+        right: 40px;
+     }
+    .nav-branch{
+        position: absolute;
+        top:0px;
+        left: 20%;
+        text-align: center;
+    }
+    .form{
+        display: none;
+    }
+    .user{
+        margin-right:10px ;
+    }
+    .footer {
+        text-align: center;
+    }
+    /*MODAL*/
+    #cart{
+        position: absolute;
+        right: 0px;
+        top:10px
+    }
+    .cart-quantity-input{
+        width: 100%;
+    }
+
+    .panner{
+        padding: 0px;
+    }
+
+    .hr{
+        width: 30% !important;
+    }
+}
+@media (min-width: 767px) and (max-width: 1023.98px) {
+    .form{
+        display: none;
+    }
+    .footer {
+        text-align: center;
+    }
+}

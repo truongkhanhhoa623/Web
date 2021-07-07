@@ -1,0 +1,31 @@
+<hr>
+<div onload="document.body.focus()" class="container-fluid">
+    <br>
+    <div class="row" ng-repeat="item in outsp">
+        <div class="col-6">
+            <img class="w-100" src={{item.img_m}}>
+
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title h2">{{item.title}}</h5>
+                    <p class="card-text">{{item.content}}</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">- {{item.content_out}}</p>
+                </div>
+                <br><br>
+             <div>   <h3 class="chonmau"> Chọn màu:   </h3><input class="box-color1 btn btn-outline" type="button"><input type="button" class="box-color2 btn btn-outline">
+             </div>
+                <h3> Giá: <span  class="money">{{item.price | currency :"$":"2"}}</span></h3>
+                <div class="text-center">
+              
+                <a href="#!muasp"><input class="btn btn-outline-danger bt-mua" type="button" ng-click="muaSanpham(item)"
+                        value="Mua Ngay" /></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
